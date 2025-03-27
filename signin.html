@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'https://cdn.jsdelivr.net';">
+    <link rel="stylesheet" href="/css/signin.css">
+    <title>Sign-in</title>
+</head>
+<body>
+
+    <h1>Sign Up/
+        <a href="/login">Login</a>
+    </h1>
+    <img class="img" src="/assets/images/login/signinbackground.jpeg" alt="Background image" width="50%" height="500vh">
+
+    <div class="form">
+        <div class="logo">
+            <img src="/assets/images/login/logo.png" alt="Logo">
+        </div>
+        <div class="container">
+            <form action="/signin" method=" POST">
+              <input class="name" type="text" placeholder="User Name" name="username" required>
+              <input class="pass" type="password" placeholder="password" name="password" required>
+              <input  class="retypepass" type="password" placeholder="Retype password" name="retypepassword" required>
+              <button class="loginbutton">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/signin.js"></script>
+</body>
+</html>

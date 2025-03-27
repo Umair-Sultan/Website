@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login
+        <a href="/signin">/Create Account</a>
+    </h1>
+    <img class="img" src="/assets/images/login/signinbackground.jpeg" alt="Background image" width="50%" height="500vh">
+
+    <div class="form">
+        <div class="logo">
+            <img src="/assets/images/login/logo.png" alt="Logo">
+        </div>
+        <div class="container">
+            <form action="/login" method="POST">
+               <input class="name" type="text" placeholder="User Name" name="username" required>
+               <input class="pass" type="password" placeholder="password" name="password" required>
+               <a href="">Forgot Password</a>
+               <button class="loginbutton" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

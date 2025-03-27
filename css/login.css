@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+h1 {
+    margin-top: 20px; 
+    margin-left: 0;
+    text-align: center; 
+    font-size: 2rem; 
+}
+
+img {
+    margin-left: 0; 
+    margin-top: 20px; 
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.form {
+    width: 100%; 
+    height: auto;
+    margin-top: 20px; 
+    margin-left: 0; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.logo img {
+    border: 2px solid white;
+    border-radius: 50%; 
+    height: 70px;
+    width: 70px;
+    margin-left: 0; 
+    margin-bottom: 20px; 
+}
+
+.container input {
+    margin-top: 10px;
+    margin-left: 0; 
+    margin-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 40px; 
+    width: 100%; 
+    max-width: 300px; 
+    padding-left: 10px;
+}
+
+.container a {
+    margin-left: 0; 
+    text-align: center;
+    display: block; 
+    margin-top: 10px; 
+}
+
+.loginbutton {
+    margin-top: 20px; 
+    margin-left: 0; 
+    border-radius: 10px;
+    height: 40px; 
+    width: 100%;
+    max-width: 300px; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 1rem; 
+}
+
+.loginbutton:hover {
+    background-color: #0056b3; 
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.5rem; 
+        margin-top: 50px;
+    }
+
+    .form {
+        padding: 10px; 
+        margin-top: -445px;
+    }
+
+    .container input {
+        height: 30px; 
+        width: 200px;
+        display: flex;
+    }
+
+    .loginbutton {
+        height: 35px; /* Slightly shorter for mobile */
+    }
+
+    .img{
+        height: 30rem;
+        width: 50rem;
+        margin-top: 90px;
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3.5rem; 
+        margin-top: 200px;
+    }
+
+    .form {
+        max-width: 500px; /* Limit form width for tablets */
+        margin: 0 auto; /* Center align form */
+        margin-top: -700px;
+        font-size: 2rem;
+
+    }
+
+    .container input {
+        max-width: 400px; /* Wider input for tablets */
+    }
+
+    .loginbutton {
+        max-width: 400px; /* Wider button for tablets */
+    }
+
+    .img{
+        margin-top: 120px;
+        margin-left: 100px;
+        height: 50rem;
+        width: 50rem;
+    }
+}
