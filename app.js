@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
+  password: "root123",
   database: "yasirwebsitedatabase",
 });
 
